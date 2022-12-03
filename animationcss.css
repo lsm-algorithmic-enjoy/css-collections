@@ -1,0 +1,83 @@
+body {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  height: 80%;
+  width: 60%;
+  background-color: #76c4c6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.geometrics {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes circlesRotate {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(180deg);
+  }
+}
+
+.circles {
+  margin-bottom: 10px;
+  animation: circlesRotate 1s ease-in-out infinite;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 20px;
+}
+
+@keyframes squarescaler {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: scaleY(1.5);
+  }
+  50%,
+  100% {
+    transform: none;
+  }
+}
+
+.squares {
+  margin-top: 10px;
+}
+
+.square {
+  background-color: white;
+  width: 10px;
+  height: 50px;
+  margin: 0 7px;
+  animation: squarescaler 1s ease-in-out infinite;
+}
+
+.square:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.square:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.square:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.square:last-child {
+  animation-delay: 0.4s;
+}

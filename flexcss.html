@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Awesome Shape</title>
+    <style>
+      html {
+        background-color: tomato;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #first {
+        height: 300px;
+        width: 300px;
+        padding: 30px;
+        background-color: wheat;
+        border: 3px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .child {
+        background-color: teal;
+        border: 4px white;
+        height: 60px;
+      }
+
+      .childnormal {
+        width: 60px;
+        border-style: solid;
+      }
+
+      .childspecial {
+        width: 240px;
+        border-style: dashed;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="first">
+      <div class="child childnormal"></div>
+      <div class="child childspecial"></div>
+      <div class="child childnormal"></div>
+    </div>
+  </body>
+</html>
